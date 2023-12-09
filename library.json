@@ -1,0 +1,22 @@
+{
+    "name": "aacmp4",
+    "keywords": "aac, mp4",
+    "description": "Simple AAC MP4 writer",
+    "homepage": "https://github.com/ciniml/aacmp4",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/ciniml/aacmp4.git"
+    },
+    "version": "0.1.0",
+    "authors": {
+      "name": "Kenta Ida",
+      "url": "https://github.com/ciniml/"
+    },
+    "exclude": [],
+    "frameworks": "*",
+    "platforms": "*",
+    "build": {
+      "libArchive": false
+    }
+  }
+  
