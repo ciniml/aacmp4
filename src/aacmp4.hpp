@@ -875,6 +875,13 @@ namespace AACMP4 {
         }
     };
 
+    struct DummyWriter {
+        std::size_t bytes_written = 0;
+        void write(const u8*, std::size_t size) {
+            this->bytes_written += size;
+        }
+    };
+
     template<typename S>
     static void write_aac_mp4(S& stream, const std::vector<u32>& chunks, const std::vector<u8>& data, std::uint32_t sample_rate, std::uint32_t number_of_samples, std::uint32_t max_samples_per_chunk) {
         FtypAtom ftyp;
