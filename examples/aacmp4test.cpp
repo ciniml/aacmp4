@@ -75,7 +75,7 @@ int main()
     chunks.reserve(1024);
 
     vector<uint8_t> input;
-    ifstream input_file("../ashita_asatte_16k.wav", ios::binary);
+    ifstream input_file("../../ashita_asatte_16k.wav", ios::binary);
     input_file.seekg(0, ios::end);
     size_t input_size = input_file.tellg();
     input.resize(input_size + frame_size);
